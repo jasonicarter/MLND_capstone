@@ -143,23 +143,31 @@ appropriate given the context of the problem.
 About the dataset:
 - The dataset
 
-For this project, stock price indicator, the dataset to be used will be that of publicly traded companies from the Nasdaq stockmarket and NYSE (New York Stock Exchange) obtained for free from Yahoo! Finance via Python module "yahoo-finance".
+For this project, stock price indicator, the dataset to be used will be that of
+publicly traded companies from the Nasdaq stock market and NYSE
+(New York Stock Exchange) obtained for free from Yahoo! Finance via Python
+module "yahoo-finance".
 
 - Why this dataset is being used (compared to others)
 
-Nasdaq and NYSE because of their size, number of companies listed on both exchanges and historic data available for training.
+Nasdaq and NYSE because of their size, number of companies listed on both
+exchanges and historic data available for training.
 
 - How it relates to the problem
 
-In order to predict future stock prices, models would need current and historic data to to determine data behaviour over time or similar characteristics???
+In order to predict future stock prices, models would need current and historic
+data to to determine data behaviour over time or similar characteristics???
 
 - How will the dataset be used
 
-Historic stock data will be used for EDA, possibly feature engineering, model training and finally the trained model will be used to predict future stock prices.
+Historic stock data will be used for EDA, possibly feature engineering, model
+training and finally the trained model will be used to predict future stock
+prices.
 
 **Dataset Characteristics**
 
-Below you can see a sample of features, values and definitions of which may be used as dataset and inputs for this project.
+Below you can see a sample of features, values and definitions of which may be
+used as dataset and inputs for this project.
 
 Name | Value | Description
 --- | --- | ---
@@ -186,29 +194,66 @@ http://www.investopedia.com/terms
 ### Solution Statement
 _(approx. 1 paragraph)_
 
-In this section, clearly describe a solution to the problem. The solution should be applicable to the project domain and appropriate for the dataset(s) or input(s) given. Additionally, describe the solution thoroughly such that it is clear that the solution is quantifiable (the solution can be expressed in mathematical or logical terms) , measurable (the solution can be measured by some metric and clearly observed), and replicable (the solution can be reproduced and occurs more than once).
+In this section, clearly describe a solution to the problem. The solution should
+be applicable to the project domain and appropriate for the dataset(s) or
+input(s) given. Additionally, describe the solution thoroughly such that it is
+clear that the solution is quantifiable (the solution can be expressed in
+mathematical or logical terms) , measurable (the solution can be measured by
+some metric and clearly observed), and replicable (the solution can be
+reproduced and occurs more than once).
 
 ---
 TODO: clean up
 
-For this project, your task is to build a stock price predictor that takes daily trading data over a certain date range as input, and outputs projected estimates for given query dates. Note that the inputs will contain multiple metrics, such as opening price (Open), highest price the stock traded at (High), how many stocks were traded (Volume) and closing price adjusted for stock splits and dividends (Adjusted Close); your system only needs to predict the Adjusted Close price.
+For this project, your task is to build a stock price predictor that takes daily
+trading data over a certain date range as input, and outputs projected estimates
+for given query dates. Note that the inputs will contain multiple metrics, such
+as opening price (Open), highest price the stock traded at (High), how many
+stocks were traded (Volume) and closing price adjusted for stock splits and
+dividends (Adjusted Close); your system only needs to predict the Adjusted Close
+price.
 
-You are free to choose what form your project takes (a simple script, a web app/service, Android/iOS app, etc.), and any additions/modifications you want to make to the project (e.g. suggesting what trades to make). Make sure you document your intended features in your report.
+You are free to choose what form your project takes (a simple script, a web
+app/service, Android/iOS app, etc.), and any additions/modifications you want
+to make to the project (e.g. suggesting what trades to make). Make sure you
+document your intended features in your report.
 
 For your core stock predictor, implement:
-A training interface that accepts a data range (start_date, end_date) and a list of ticker symbols (e.g. GOOG, AAPL), and builds a model of stock behavior. Your code should read the desired historical prices from the data source of your choice.
-A query interface that accepts a list of dates and a list of ticker symbols, and outputs the predicted stock prices for each of those stocks on the given dates. Note that the query dates passed in must be after the training date range, and ticker symbols must be a subset of the ones trained on.
+A training interface that accepts a data range (start_date, end_date) and a
+list of ticker symbols (e.g. GOOG, AAPL), and builds a model of stock behavior.
+Your code should read the desired historical prices from the data source of your
+choice.
+A query interface that accepts a list of dates and a list of ticker symbols, and
+outputs the predicted stock prices for each of those stocks on the given dates.
+Note that the query dates passed in must be after the training date range, and
+ticker symbols must be a subset of the ones trained on.
 
-Once you’re iterated on your stock predictor a few times, and it is giving results you are happy with (say, predicted stock value 7 days out is within +/- 5% of actual value, on average), implement a more user-friendly interface that lets you specify stock(s) you are interested in and provides predictions at some pre-defined intervals.
-You can extend the system to suggest good stocks to buy or sell, and when. You could also maintain a portfolio of stocks for the user to make these suggestions more concrete. Document these enhancements in your report, with diagrams, screenshots, etc.
+Once you’re iterated on your stock predictor a few times, and it is giving
+results you are happy with (say, predicted stock value 7 days out is within
++/- 5% of actual value, on average), implement a more user-friendly interface
+that lets you specify stock(s) you are interested in and provides predictions at
+some pre-defined intervals.
+You can extend the system to suggest good stocks to buy or sell, and when. You
+could also maintain a portfolio of stocks for the user to make these suggestions
+more concrete. Document these enhancements in your report, with diagrams,
+screenshots, etc.
 
-A basic run of the core system would involve one call to the training interface, and one or more calls to the query interface. Implement a train-test cycle to measure the performance of your model. Use it to test prediction accuracy for query dates at different intervals after the training end date, e.g. the day immediately after training end date, 7 days later, 14 days, 28 days, etc.
+A basic run of the core system would involve one call to the training interface,
+and one or more calls to the query interface. Implement a train-test cycle to
+measure the performance of your model. Use it to test prediction accuracy for
+query dates at different intervals after the training end date, e.g. the day
+immediately after training end date, 7 days later, 14 days, 28 days, etc.
 
 
 ### Benchmark Model
 _(approximately 1-2 paragraphs)_
 
-In this section, provide the details for a benchmark model or result that relates to the domain, problem statement, and intended solution. Ideally, the benchmark model or result contextualizes existing methods or known information in the domain and problem given, which could then be objectively compared to the solution. Describe how the benchmark model or result is measurable (can be measured by some metric and clearly observed) with thorough detail.
+In this section, provide the details for a benchmark model or result that
+relates to the domain, problem statement, and intended solution. Ideally, the
+benchmark model or result contextualizes existing methods or known information
+in the domain and problem given, which could then be objectively compared to the
+solution. Describe how the benchmark model or result is measurable (can be
+  measured by some metric and clearly observed) with thorough detail.
 
 ---
 
@@ -229,7 +274,13 @@ http://www.investopedia.com/terms/b/benchmark.asp
 ### Evaluation Metrics
 _(approx. 1-2 paragraphs)_
 
-In this section, propose at least one evaluation metric that can be used to quantify the performance of both the benchmark model and the solution model. The evaluation metric(s) you propose should be appropriate given the context of the data, the problem statement, and the intended solution. Describe how the evaluation metric(s) are derived and provide an example of their mathematical representations (if applicable). Complex evaluation metrics should be clearly defined and quantifiable (can be expressed in mathematical or logical terms).
+In this section, propose at least one evaluation metric that can be used to
+quantify the performance of both the benchmark model and the solution model.
+The evaluation metric(s) you propose should be appropriate given the context of
+the data, the problem statement, and the intended solution. Describe how the
+evaluation metric(s) are derived and provide an example of their mathematical
+representations (if applicable). Complex evaluation metrics should be clearly
+defined and quantifiable (can be expressed in mathematical or logical terms).
 
 ---
 
@@ -238,7 +289,15 @@ In this section, propose at least one evaluation metric that can be used to quan
 ### Project Design
 _(approx. 1 page)_
 
-In this final section, summarize a theoretical workflow for approaching a solution given the problem. Provide thorough discussion for what strategies you may consider employing, what analysis of the data might be required before being used, or which algorithms will be considered for your implementation. The workflow and discussion that you provide should align with the qualities of the previous sections. Additionally, you are encouraged to include small visualizations, pseudocode, or diagrams to aid in describing the project design, but it is not required. The discussion should clearly outline your intended workflow of the capstone project.
+In this final section, summarize a theoretical workflow for approaching a
+solution given the problem. Provide thorough discussion for what strategies you
+may consider employing, what analysis of the data might be required before being
+used, or which algorithms will be considered for your implementation. The
+workflow and discussion that you provide should align with the qualities of the
+previous sections. Additionally, you are encouraged to include small
+visualizations, pseudocode, or diagrams to aid in describing the project design,
+but it is not required. The discussion should clearly outline your intended
+workflow of the capstone project.
 
 ---
 
@@ -250,8 +309,13 @@ In this final section, summarize a theoretical workflow for approaching a soluti
 
 **Before submitting your proposal, ask yourself. . .**
 
-- Does the proposal you have written follow a well-organized structure similar to that of the project template?
-- Is each section (particularly **Solution Statement** and **Project Design**) written in a clear, concise and specific fashion? Are there any ambiguous terms or phrases that need clarification?
-- Would the intended audience of your project be able to understand your proposal?
-- Have you properly proofread your proposal to assure there are minimal grammatical and spelling mistakes?
+- Does the proposal you have written follow a well-organized structure similar
+to that of the project template?
+- Is each section (particularly **Solution Statement** and **Project Design**)
+written in a clear, concise and specific fashion? Are there any ambiguous terms
+or phrases that need clarification?
+- Would the intended audience of your project be able to understand your
+proposal?
+- Have you properly proofread your proposal to assure there are minimal
+grammatical and spelling mistakes?
 - Are all the resources used for this project correctly cited and referenced?
