@@ -14,35 +14,74 @@ _(approx. 2-3 pages)_
 ### Domain Background
 _(approx. 1-2 paragraphs)_
 
-In this section, provide brief details on the background information of the domain from which the project is proposed. Historical information relevant to the project should be included. It should be clear how or why a problem in the domain can or should be solved. Related academic research should be appropriately cited in this section, including why that research is relevant. Additionally, a discussion of your personal motivation for investigating a particular problem in the domain is encouraged but not required.
+In this section, provide brief details on the background information of the
+domain from which the project is proposed. Historical information relevant to
+the project should be included. It should be clear how or why a problem in the
+domain can or should be solved. Related academic research should be
+appropriately cited in this section, including why that research is relevant.
+Additionally, a discussion of your personal motivation for investigating a
+particular problem in the domain is encouraged but not required.
 
 ___
 
-*An investment is an asset or item that is purchased with the hope that it will generate income or will appreciate in the future. [...] In finance, an investment is a monetary asset purchased with the idea that the asset will provide income in the future or will be sold at a higher price for a profit.*
+*An investment is an asset or item that is purchased with the hope that it will
+generate income or will appreciate in the future. [...] In finance, an
+investment is a monetary asset purchased with the idea that the asset will
+provide income in the future or will be sold at a higher price for a profit.*
 
-This proposal will target the finance domain, specifically, the subset of stocks and the stockmarket. Going forward, the definition of investing and trading will be accepted as:
+This proposal will target the finance domain, specifically, the subset of stocks
+and the stockmarket. Going forward, the definition of investing and trading
+will be accepted as:
 
-- **Investing** is the act of committing money or capital to an endeavor (a business, project, real estate, etc.) with the expectation of obtaining an additional income or profit.
+- **Investing** is the act of committing money or capital to an endeavor
+(a business, project, real estate, etc.) with the expectation of obtaining an
+additional income or profit.
 
-- **Trading** is a basic economic concept involving the buying and selling of goods and services, with compensation paid by a buyer to a seller, or the exchange of goods or services between parties. [...] In financial markets, trading refers to the buying and selling of securities, such as the purchase of stock on the floor of the New York Stock Exchange (NYSE).
+- **Trading** is a basic economic concept involving the buying and selling of
+goods and services, with compensation paid by a buyer to a seller, or the
+exchange of goods or services between parties. [...] In financial markets,
+trading refers to the buying and selling of securities, such as the purchase of
+stock on the floor of the New York Stock Exchange (NYSE).
 
 #### The First Stock Market
-The world’s first stock markets are generally linked back to Antwerp, Belgium as far back as 1531. However, at the time, the markets dealt with only the affairs of government, businesses, and individual debt.
+The world’s first stock markets are generally linked back to Antwerp, Belgium as
+far back as 1531. But it wasn't until 1602, when the Dutch East India Company
+officially became the world’s first publicly traded company.
 
-On the cusp of imperialism's high point, everyone had a stake in the profits from the East Indies. Explorers sailed there in droves but ships were lost, fortunes were squandered, and financiers realized they had to do something to mitigate the risk. In 1602, the Dutch East India Company officially became the world’s first publically traded company when it released shares of the company on the Amsterdam Stock Exchange. Stocks and bonds were issued to investors and each investor was entitled to a fixed percentage of East India Company’s profits.
+Ships that sailed to the East Indies were lost at sea, fortunes were squandered
+or came across other mishaps and financiers wanted a way to mitigate their risk.
+Being publicly traded allowed investors to own stocks and bonds of the East
+India Company that entitled investors to a fixed percentage of the company's
+profits.
 
-Today, tens of thousands of companies publically treated on the stockmarkets around the world with milllions of investors ranging from casual individuals and professional day traders to high speed volumne traders and large hedge fund firms.
+Today, tens of thousands of companies are publicly traded on the stock market
+around the world with millions of investors, ranging from casual individuals and
+professional day traders to high speed volume traders and large hedge fund firms.
 
-#### Profits
-Knowing the future or being abit to predict which assets will appreciate or depreciate in value would be advantageous to the owner of said investment. Investment firms, hedge funds and even individuals have been using financial models to better understand market behavior and make profitable investments and trades.
+#### Profit
+From 1602 to 2016, the ultimate goal of any investor is to make profit. Knowing
+the future, or being able to predict which assets will appreciate or depreciate
+in value over time, will also be advantageous to the owner of said investment.
+Investment firms, hedge funds and  individual investor have been know to use
+financial models to better understand market behavior and make profitable
+investments and trades.
 
-Examples, new articles, research papers
+TODO: Examples, new articles, research papers
 - roboadvisors
 - research papers
 - application of ML in the field
 
-#### Personal movitation
-The world of machine learning can be to many things and on a personal level finance happens to be one of the more interesting areas. Machine learning can not only help to solve complicated financial problems but also can help people grow their personal weathly (directly or indirectly) whom otherwise would not have the opportunity due to current income or society level, whether this be via analysis of their finanical spending and budgeting or having access to "roboadvisors" that, debately, can have the same or better investment returns as people who can afford to hire professional hedge fund managers.
+#### Personal Motivation
+The world of machine learning permeates many domains and on a personal level
+finance happens to be one of the more interesting areas. Machine learning can
+not only help solve complicated financial problems but also can help the average
+person grow their personal wealth (directly or indirectly) whom otherwise would
+not have the opportunity due to current income or "social level". Whether this
+be via analysis of their financial spending and budgeting or having access to
+"roboadvisors" that, debatably, can have the same or better investment returns
+as people who can afford to hire professional hedge fund managers, access to
+this (open) data and the application of machine learning in the finance domain
+can change lives.
 
 
 http://www.investopedia.com/terms/i/investment.asp
@@ -54,25 +93,50 @@ https://github.com/rasbt/python-machine-learning-book
 ### Problem Statement
 _(approx. 1 paragraph)_
 
-In this section, clearly describe the problem that is to be solved. The problem described should be well defined and should have at least one relevant potential solution. Additionally, describe the problem thoroughly such that it is clear that the problem is quantifiable (the problem can be expressed in mathematical or logical terms) , measurable (the problem can be measured by some metric and clearly observed), and replicable (the problem can be reproduced and occurs more than once).
+In this section, clearly describe the problem that is to be solved. The problem
+described should be well defined and should have at least one relevant potential
+solution. Additionally, describe the problem thoroughly such that it is clear
+that the problem is quantifiable (the problem can be expressed in mathematical
+or logical terms) , measurable (the problem can be measured by some metric and
+clearly observed), and replicable (the problem can be reproduced and occurs more
+than once).
 
 ----
 
-Essentially, if you exclude more advanced investing and trading techniques, such as options or x, the main premise is to "buy low, sell high". That is, buy your investment at a low price and hope to sell the same investment at price higher then what you bought it for.
+Essentially, if you exclude more advanced investing and trading techniques, such
+as options or x, the main premise is to "buy low, sell high". That is, buy your
+investment at a low price and hope to sell the same investment at price higher
+then what you bought it for.
 
-Problem - how to predict if you buy a stock at price x, that it will be x+y given time t
+Problem - how to predict if you buy a stock at price x, that it will be x+y
+given time t
 
-Potential solution - supervised learning model trained on historic data to predict, within a margin of error, the future closing price of a stock. This knowledge would put the owner of said information in an advantageous position, allowing him or her to invest in a company's stock increase or decrease in value.
+Potential solution - supervised learning model trained on historic data to
+predict, within a margin of error, the future closing price of a stock. This
+knowledge would put the owner of said information in an advantageous position,
+allowing him or her to invest in a company's stock increase or decrease in value.
 
 For your core stock predictor, implement:
-- A training interface that accepts a data range (start_date, end_date) and a list of ticker symbols (e.g. GOOG, AAPL), and builds a model of stock behavior. Your code should read the desired historical prices from the data source of your choice.
-- A query interface that accepts a list of dates and a list of ticker symbols, and outputs the predicted stock prices for each of those stocks on the given dates. Note that the query dates passed in must be after the training date range, and ticker symbols must be a subset of the ones trained on.
+- A training interface that accepts a data range (start_date, end_date) and a
+list of ticker symbols (e.g. GOOG, AAPL), and builds a model of stock behavior.
+Your code should read the desired historical prices from the data source of your
+choice.
+- A query interface that accepts a list of dates and a list of ticker symbols,
+and outputs the predicted stock prices for each of those stocks on the given
+dates. Note that the query dates passed in must be after the training date
+range, and ticker symbols must be a subset of the ones trained on.
 
 
 ### Datasets and Inputs
 _(approx. 2-3 paragraphs)_
 
-In this section, the dataset(s) and/or input(s) being considered for the project should be thoroughly described, such as how they relate to the problem and why they should be used. Information such as how the dataset or input is (was) obtained, and the characteristics of the dataset or input, should be included with relevant references and citations as necessary It should be clear how the dataset(s) or input(s) will be used in the project and whether their use is appropriate given the context of the problem.
+In this section, the dataset(s) and/or input(s) being considered for the project
+should be thoroughly described, such as how they relate to the problem and why
+they should be used. Information such as how the dataset or input is (was)
+obtained, and the characteristics of the dataset or input, should be included
+with relevant references and citations as necessary It should be clear how the
+dataset(s) or input(s) will be used in the project and whether their use is
+appropriate given the context of the problem.
 
 ---
 
@@ -191,4 +255,3 @@ In this final section, summarize a theoretical workflow for approaching a soluti
 - Would the intended audience of your project be able to understand your proposal?
 - Have you properly proofread your proposal to assure there are minimal grammatical and spelling mistakes?
 - Are all the resources used for this project correctly cited and referenced?
-
