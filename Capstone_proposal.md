@@ -48,41 +48,37 @@ The world’s first stock markets are generally linked back to Antwerp, Belgium 
 far back as 1531. But it wasn't until 1602, when the Dutch East India Company
 officially became the world’s first publicly traded company.
 
-Ships that sailed to the East Indies were lost at sea, fortunes were squandered
-or came across other mishaps and financiers wanted a way to mitigate their risk.
-Being publicly traded allowed investors to own stocks and bonds of the East
-India Company that entitled investors to a fixed percentage of the company's
-profits.
-
 Today, tens of thousands of companies are publicly traded on the stock market
 around the world with millions of investors, ranging from casual individuals and
 professional day traders to high speed volume traders and large hedge fund firms.
 
-#### Profit
-From 1602 to 2016, the ultimate goal of any investor is to make profit. Knowing
-the future, or being able to predict which assets will appreciate or depreciate
-in value over time, will also be advantageous to the owner of said investment.
-Investment firms, hedge funds and  individual investor have been know to use
-financial models to better understand market behavior and make profitable
-investments and trades.
+#### In Search of Profit, knowledge and Understanding
+From 1602 'til now, the ultimate goal of any investor has been to make profit.
+Being able to predict which assets will appreciate or depreciate in value over
+time, is obviously advantageous to the owner of said knowledge. Whether it be
+individual investors, hedge fund firms or academic researchers there has always
+been interest in the stockmarket in search of profit, knowledge and Understanding.
 
-TODO: Examples, new articles, research papers
+TODO: finish up
+
 - roboadvisors
-- research papers
-- application of ML in the field
+- http://www.diva-portal.org/smash/get/diva2:354463/fulltext01.pdf
+- http://www.academia.edu/11692137/Analyzing_Different_Machine_Learning_Techniques_for_Stock_Market_Prediction
+- http://cs229.stanford.edu/proj2015/009_report.pdf
+- http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.278.6139&rep=rep1&type=pdf
+- http://cs229.stanford.edu/proj2012/ShenJiangZhang-StockMarketForecastingusingMachineLearningAlgorithms.pdf
 
 #### Personal Motivation
 The world of machine learning permeates many domains and on a personal level
 finance happens to be one of the more interesting areas. Machine learning can
 not only help solve complicated financial problems but also can help the average
 person grow their personal wealth (directly or indirectly) whom otherwise would
-not have the opportunity due to current income or "social level". Whether this
+not have the opportunity due to income or social level. Whether this
 be via analysis of their financial spending and budgeting or having access to
-"roboadvisors" that, debatably, can have the same or better investment returns
-as people who can afford to hire professional hedge fund managers, access to
-this (open) data and the application of machine learning in the finance domain
-can change lives.
+financial tool such as "roboadvisors", this data and the application of machine
+learning in the finance domain can change lives.
 
+TODO: Add to references
 
 http://www.investopedia.com/terms/i/investment.asp
 http://bebusinessed.com/history/history-of-the-stock-market/
@@ -140,28 +136,18 @@ appropriate given the context of the problem.
 
 ---
 
-About the dataset:
-- The dataset
-
 For this project, stock price indicator, the dataset to be used will be that of
 publicly traded companies from the Nasdaq stock market and NYSE
 (New York Stock Exchange) obtained for free from Yahoo! Finance via Python
 module "yahoo-finance".
 
-- Why this dataset is being used (compared to others)
-
 Nasdaq and NYSE because of their size, number of companies listed on both
-exchanges and historic data available for training.
+exchanges and historic data available for training. In order to predict future
+stock prices, models would need current and historic data to to determine data
+behavior over time or similar characteristics???
 
-- How it relates to the problem
-
-In order to predict future stock prices, models would need current and historic
-data to to determine data behaviour over time or similar characteristics???
-
-- How will the dataset be used
-
-Historic stock data will be used for EDA, possibly feature engineering, model
-training and finally the trained model will be used to predict future stock
+Historic stock data will be used for EDA, feature selection and engineering,
+model training and finally the trained model will be used to predict future stock
 prices.
 
 **Dataset Characteristics**
@@ -184,12 +170,9 @@ Industry | Internet Information Providers | a classification that refers to grou
 Sector | Technology | a sector is an area of the economy in which businesses share the same or a related product or service
 start | 1996-04-12 | initial offering date at which a security is first made available for public purchase
 
-
-https://en.wikipedia.org/wiki/NASDAQ
-
-https://en.wikipedia.org/wiki/New_York_Stock_Exchange
-
-http://www.investopedia.com/terms
+- https://en.wikipedia.org/wiki/NASDAQ
+- https://en.wikipedia.org/wiki/New_York_Stock_Exchange
+- http://www.investopedia.com/terms
 
 ### Solution Statement
 _(approx. 1 paragraph)_
@@ -207,43 +190,17 @@ TODO: clean up
 
 For this project, your task is to build a stock price predictor that takes daily
 trading data over a certain date range as input, and outputs projected estimates
-for given query dates. Note that the inputs will contain multiple metrics, such
-as opening price (Open), highest price the stock traded at (High), how many
-stocks were traded (Volume) and closing price adjusted for stock splits and
-dividends (Adjusted Close); your system only needs to predict the Adjusted Close
-price.
+for given query dates.
 
-You are free to choose what form your project takes (a simple script, a web
-app/service, Android/iOS app, etc.), and any additions/modifications you want
-to make to the project (e.g. suggesting what trades to make). Make sure you
-document your intended features in your report.
-
-For your core stock predictor, implement:
 A training interface that accepts a data range (start_date, end_date) and a
 list of ticker symbols (e.g. GOOG, AAPL), and builds a model of stock behavior.
 Your code should read the desired historical prices from the data source of your
 choice.
+
 A query interface that accepts a list of dates and a list of ticker symbols, and
 outputs the predicted stock prices for each of those stocks on the given dates.
 Note that the query dates passed in must be after the training date range, and
 ticker symbols must be a subset of the ones trained on.
-
-Once you’re iterated on your stock predictor a few times, and it is giving
-results you are happy with (say, predicted stock value 7 days out is within
-+/- 5% of actual value, on average), implement a more user-friendly interface
-that lets you specify stock(s) you are interested in and provides predictions at
-some pre-defined intervals.
-You can extend the system to suggest good stocks to buy or sell, and when. You
-could also maintain a portfolio of stocks for the user to make these suggestions
-more concrete. Document these enhancements in your report, with diagrams,
-screenshots, etc.
-
-A basic run of the core system would involve one call to the training interface,
-and one or more calls to the query interface. Implement a train-test cycle to
-measure the performance of your model. Use it to test prediction accuracy for
-query dates at different intervals after the training end date, e.g. the day
-immediately after training end date, 7 days later, 14 days, 28 days, etc.
-
 
 ### Benchmark Model
 _(approximately 1-2 paragraphs)_
@@ -265,11 +222,9 @@ TODO: Elaborate
 - S&P 500???
 
 
-http://francescopochetti.com/stock-market-prediction-part-introduction/
-
-https://www.quantstart.com/articles/Backtesting-a-Forecasting-Strategy-for-the-SP500-in-Python-with-pandas
-
-http://www.investopedia.com/terms/b/benchmark.asp
+- http://francescopochetti.com/stock-market-prediction-part-introduction/
+- https://www.quantstart.com/articles/Backtesting-a-Forecasting-Strategy-for-the-SP500-in-Python-with-pandas
+- http://www.investopedia.com/terms/b/benchmark.asp
 
 ### Evaluation Metrics
 _(approx. 1-2 paragraphs)_
@@ -283,6 +238,8 @@ representations (if applicable). Complex evaluation metrics should be clearly
 defined and quantifiable (can be expressed in mathematical or logical terms).
 
 ---
+
+TODO: Research
 
 - Precision, recall, F1-score???
 
