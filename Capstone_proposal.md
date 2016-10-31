@@ -12,17 +12,6 @@ _(approx. 2-3 pages)_
 **Investment and Trading - A Stock Price Indicator**
 
 ### Domain Background
-_(approx. 1-2 paragraphs)_
-
-In this section, provide brief details on the background information of the
-domain from which the project is proposed. Historical information relevant to
-the project should be included. It should be clear how or why a problem in the
-domain can or should be solved. Related academic research should be
-appropriately cited in this section, including why that research is relevant.
-Additionally, a discussion of your personal motivation for investigating a
-particular problem in the domain is encouraged but not required.
-
-___
 
 *An investment is an asset or item that is purchased with the hope that it will
 generate income or will appreciate in the future. [...] In finance, an
@@ -30,7 +19,7 @@ investment is a monetary asset purchased with the idea that the asset will
 provide income in the future or will be sold at a higher price for a profit.*
 
 This proposal will target the finance domain, specifically, the subset of stocks
-and the stockmarket. Going forward, the definition of investing and trading
+and the stock market. Going forward, the definition of investing and trading
 will be accepted as:
 
 - **Investing** is the act of committing money or capital to an endeavor
@@ -54,25 +43,16 @@ professional day traders to high speed volume traders and large hedge fund firms
 
 #### In Search of Profit, knowledge and Understanding
 From 1602 'til now, the ultimate goal of any investor has been to make profit.
-Being able to predict which assets will appreciate or depreciate in value over
+Being able to **predict** which assets will appreciate or depreciate in value over
 time, is obviously advantageous to the owner of said knowledge. Whether it be
 individual investors, hedge fund firms or academic researchers there has always
-been interest in the stockmarket in search of profit, knowledge and Understanding.
-
-TODO: finish up
-
-- roboadvisors
-- http://www.diva-portal.org/smash/get/diva2:354463/fulltext01.pdf
-- http://www.academia.edu/11692137/Analyzing_Different_Machine_Learning_Techniques_for_Stock_Market_Prediction
-- http://cs229.stanford.edu/proj2015/009_report.pdf
-- http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.278.6139&rep=rep1&type=pdf
-- http://cs229.stanford.edu/proj2012/ShenJiangZhang-StockMarketForecastingusingMachineLearningAlgorithms.pdf
+been interest in the stock market in search of profit, knowledge and Understanding.
 
 #### Personal Motivation
-The world of machine learning permeates many domains and on a personal level
+The world of machine learning permeates many domains, and on a personal level
 finance happens to be one of the more interesting areas. Machine learning can
 not only help solve complicated financial problems but also can help the average
-person grow their personal wealth (directly or indirectly) whom otherwise would
+citizen grow their personal wealth (directly or indirectly) whom otherwise would
 not have the opportunity due to income or social level. Whether this
 be via analysis of their financial spending and budgeting or having access to
 financial tool such as "roboadvisors", this data and the application of machine
@@ -86,55 +66,24 @@ http://www.investopedia.com/articles/07/stock-exchange-history.asp
 https://github.com/googledatalab/notebooks/blob/master/samples/TensorFlow%20Machine%20Learning%20with%20Financial%20Data%20on%20Google%20Cloud%20Platform.ipynb
 https://github.com/rasbt/python-machine-learning-book
 
+- roboadvisors
+- http://www.diva-portal.org/smash/get/diva2:354463/fulltext01.pdf
+- http://www.academia.edu/11692137/Analyzing_Different_Machine_Learning_Techniques_for_Stock_Market_Prediction
+- http://cs229.stanford.edu/proj2015/009_report.pdf
+- http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.278.6139&rep=rep1&type=pdf
+- http://cs229.stanford.edu/proj2012/ShenJiangZhang-StockMarketForecastingusingMachineLearningAlgorithms.pdf
+
 ### Problem Statement
-_(approx. 1 paragraph)_
-
-In this section, clearly describe the problem that is to be solved. The problem
-described should be well defined and should have at least one relevant potential
-solution. Additionally, describe the problem thoroughly such that it is clear
-that the problem is quantifiable (the problem can be expressed in mathematical
-or logical terms) , measurable (the problem can be measured by some metric and
-clearly observed), and replicable (the problem can be reproduced and occurs more
-than once).
-
-----
 
 Essentially, if you exclude more advanced investing and trading techniques, such
 as options or x, the main premise is to "buy low, sell high". That is, buy your
-investment at a low price and hope to sell the same investment at price higher
-then what you bought it for.
+investment/stock at a low price and hope to sell the same investment, some time
+in the future, at a price higher then what you bought it.
 
-Problem - how to predict if you buy a stock at price x, that it will be x+y
-given time t
-
-Potential solution - supervised learning model trained on historic data to
-predict, within a margin of error, the future closing price of a stock. This
-knowledge would put the owner of said information in an advantageous position,
-allowing him or her to invest in a company's stock increase or decrease in value.
-
-For your core stock predictor, implement:
-- A training interface that accepts a data range (start_date, end_date) and a
-list of ticker symbols (e.g. GOOG, AAPL), and builds a model of stock behavior.
-Your code should read the desired historical prices from the data source of your
-choice.
-- A query interface that accepts a list of dates and a list of ticker symbols,
-and outputs the predicted stock prices for each of those stocks on the given
-dates. Note that the query dates passed in must be after the training date
-range, and ticker symbols must be a subset of the ones trained on.
-
+The problem to be solved: *Predict the future price of stock A, given the historic
+price of stock A, over a time period of t.*
 
 ### Datasets and Inputs
-_(approx. 2-3 paragraphs)_
-
-In this section, the dataset(s) and/or input(s) being considered for the project
-should be thoroughly described, such as how they relate to the problem and why
-they should be used. Information such as how the dataset or input is (was)
-obtained, and the characteristics of the dataset or input, should be included
-with relevant references and citations as necessary It should be clear how the
-dataset(s) or input(s) will be used in the project and whether their use is
-appropriate given the context of the problem.
-
----
 
 For this project, stock price indicator, the dataset to be used will be that of
 publicly traded companies from the Nasdaq stock market and NYSE
@@ -175,18 +124,6 @@ start | 1996-04-12 | initial offering date at which a security is first made ava
 - http://www.investopedia.com/terms
 
 ### Solution Statement
-_(approx. 1 paragraph)_
-
-In this section, clearly describe a solution to the problem. The solution should
-be applicable to the project domain and appropriate for the dataset(s) or
-input(s) given. Additionally, describe the solution thoroughly such that it is
-clear that the solution is quantifiable (the solution can be expressed in
-mathematical or logical terms) , measurable (the solution can be measured by
-some metric and clearly observed), and replicable (the solution can be
-reproduced and occurs more than once).
-
----
-TODO: clean up
 
 For this project, your task is to build a stock price predictor that takes daily
 trading data over a certain date range as input, and outputs projected estimates
@@ -201,6 +138,11 @@ A query interface that accepts a list of dates and a list of ticker symbols, and
 outputs the predicted stock prices for each of those stocks on the given dates.
 Note that the query dates passed in must be after the training date range, and
 ticker symbols must be a subset of the ones trained on.
+
+Potential solution - supervised learning model trained on historic data to
+predict, within a margin of error, the future closing price of a stock. This
+knowledge would put the owner of said information in an advantageous position,
+allowing him or her to invest in a company's stock increase or decrease in value.
 
 ### Benchmark Model
 _(approximately 1-2 paragraphs)_
@@ -242,6 +184,11 @@ defined and quantifiable (can be expressed in mathematical or logical terms).
 TODO: Research
 
 - Precision, recall, F1-score???
+
+
+Once you’re iterated on your stock predictor a few times, and it is giving
+results you are happy with (say, predicted stock value 7 days out is
+within +/- 5% of actual value, on average),
 
 ### Project Design
 _(approx. 1 page)_
