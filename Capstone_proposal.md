@@ -58,14 +58,6 @@ be via analysis of their financial spending and budgeting or having access to
 financial tool such as "roboadvisors", this data and the application of machine
 learning in the finance domain can change lives.
 
-TODO: Add to references
-
-http://www.investopedia.com/terms/i/investment.asp
-http://bebusinessed.com/history/history-of-the-stock-market/
-http://www.investopedia.com/articles/07/stock-exchange-history.asp
-https://github.com/googledatalab/notebooks/blob/master/samples/TensorFlow%20Machine%20Learning%20with%20Financial%20Data%20on%20Google%20Cloud%20Platform.ipynb
-https://github.com/rasbt/python-machine-learning-book
-
 - roboadvisors
 - http://www.diva-portal.org/smash/get/diva2:354463/fulltext01.pdf
 - http://www.academia.edu/11692137/Analyzing_Different_Machine_Learning_Techniques_for_Stock_Market_Prediction
@@ -80,8 +72,9 @@ as options or x, the main premise is to "buy low, sell high". That is, buy your
 investment/stock at a low price and hope to sell the same investment, some time
 in the future, at a price higher then what you bought it.
 
-The problem to be solved: *Predict the future price of stock A, given the historic
-price of stock A, over a time period of t.*
+The problem to be solved: *Predict the future price of a given stock, given the
+historic prices of said stock, over a time period using concepts and techniques
+in technical analysis and machine learning.*
 
 ### Datasets and Inputs
 
@@ -145,50 +138,43 @@ knowledge would put the owner of said information in an advantageous position,
 allowing him or her to invest in a company's stock increase or decrease in value.
 
 ### Benchmark Model
-_(approximately 1-2 paragraphs)_
 
-In this section, provide the details for a benchmark model or result that
-relates to the domain, problem statement, and intended solution. Ideally, the
-benchmark model or result contextualizes existing methods or known information
-in the domain and problem given, which could then be objectively compared to the
-solution. Describe how the benchmark model or result is measurable (can be
-  measured by some metric and clearly observed) with thorough detail.
-
----
-
-TODO: Elaborate
-
-- Find similar stock mark indicator model for benchmarking
+- Similar stock mark indicator model for benchmarking
+-- http://www.stock-forecasting.com/Content/Data/Test.aspx
 - A naive simple solution such as k-means or decision tree
-- Backtesting???
-- S&P 500???
-
-
-- http://francescopochetti.com/stock-market-prediction-part-introduction/
-- https://www.quantstart.com/articles/Backtesting-a-Forecasting-Strategy-for-the-SP500-in-Python-with-pandas
-- http://www.investopedia.com/terms/b/benchmark.asp
+- Backtesting
+-- http://www.investopedia.com/terms/b/backtesting.asp
+-- https://www.quantstart.com/articles/Backtesting-a-Forecasting-Strategy-for-the-SP500-in-Python-with-pandas
+- S&P 500 (compare to future results)
+-- http://www.investopedia.com/terms/b/benchmark.asp
 
 ### Evaluation Metrics
-_(approx. 1-2 paragraphs)_
 
-In this section, propose at least one evaluation metric that can be used to
-quantify the performance of both the benchmark model and the solution model.
-The evaluation metric(s) you propose should be appropriate given the context of
-the data, the problem statement, and the intended solution. Describe how the
-evaluation metric(s) are derived and provide an example of their mathematical
-representations (if applicable). Complex evaluation metrics should be clearly
-defined and quantifiable (can be expressed in mathematical or logical terms).
+The benchmark model and solution model will be evaluated, when appropriate, with
+the Root Mean Squared Error and R^2 score metrics.
 
----
+**Root Mean Squared Error (RMSE)**
 
-TODO: Research
+The root mean squared error or deviation measures the difference between values
+predicted by the model and the values actually observed. It is considered to be
+one of the most popular metrics for evaluating regression models.
 
-- Precision, recall, F1-score???
+\[ {RMSE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2} \]
 
+**R Squared (R^2)**
 
-Once you’re iterated on your stock predictor a few times, and it is giving
-results you are happy with (say, predicted stock value 7 days out is
-within +/- 5% of actual value, on average),
+R Squared, the coefficient of determination, is an indication of the goodness of
+fit of predicted values to the actual values.
+
+\[ R^2 = 1 - \frac{SS_{res}}{SS_{tot}} \]
+
+Model results will be considered satisfactory if the predicted stock value 7 days
+in the future is within +/- 5% of the actual value, on average.
+
+- https://en.wikipedia.org/wiki/Root-mean-square_deviation
+- https://en.wikipedia.org/wiki/Coefficient_of_determination
+- http://scikit-learn.org/stable/modules/model_evaluation.html
+- https://www.kaggle.com/wiki/RootMeanSquaredError
 
 ### Project Design
 _(approx. 1 page)_
@@ -210,16 +196,12 @@ workflow of the capstone project.
 - which algos you may use
 - visualization...loop back to gray boxes and workflow
 
+### References
 
-**Before submitting your proposal, ask yourself. . .**
-
-- Does the proposal you have written follow a well-organized structure similar
-to that of the project template?
-- Is each section (particularly **Solution Statement** and **Project Design**)
-written in a clear, concise and specific fashion? Are there any ambiguous terms
-or phrases that need clarification?
-- Would the intended audience of your project be able to understand your
-proposal?
-- Have you properly proofread your proposal to assure there are minimal
-grammatical and spelling mistakes?
-- Are all the resources used for this project correctly cited and referenced?
+- http://www.investopedia.com/terms/i/investment.asp
+- http://bebusinessed.com/history/history-of-the-stock-market/
+- http://www.investopedia.com/articles/07/stock-exchange-history.asp
+- https://github.com/googledatalab/notebooks/blob/master/samples/TensorFlow%20Machine%20Learning%20with%20Financial%20Data%20on%20Google%20Cloud%20Platform.ipynb
+- https://github.com/rasbt/python-machine-learning-book
+- http://francescopochetti.com/stock-market-prediction-part-introduction/
+- https://www.quantstart.com/articles/Forecasting-Financial-Time-Series-Part-1
