@@ -7,7 +7,6 @@ by Jason Carter
 November X, 2016
 
 ## Proposal
-_(approx. 2-3 pages)_
 
 **Investment and Trading - A Stock Price Indicator**
 
@@ -195,6 +194,36 @@ workflow of the capstone project.
 - what analysis may be required - EDA chat
 - which algos you may use
 - visualization...loop back to gray boxes and workflow
+
+**Workflow**
+
+- http://sebastianraschka.com/Articles/2014_intro_supervised_learning.html
+- data gathering+collection
+- EDA and visualization
+- dimensionality reduction? PCA?
+- Feature reduction / selection / engineering
+- train/test split
+- cross-validation training
+- tuning / hyperparamater optimization
+- final model
+- test
+-- test dataset / backtesting
+- prediction
+-- new data
+
+**Product Workflow**
+
+From a user's perspective
+
+- front-end
+- add stock symbol
+- select range / accuracy
+- predict
+-- rest api?
+-- return prediction
+- display stock price and future date
+- side: other thing
+
 
 ### References
 
