@@ -190,40 +190,81 @@ workflow of the capstone project.
 
 ---
 
-- workflow gray boxes backend (model) and frontend (ui)
-- what analysis may be required - EDA chat
-- which algos you may use
-- visualization...loop back to gray boxes and workflow
+Describe the project as a product, and the overall strategy which is divided
+into two sections (model/backend and frontend) of the product.
 
-**Workflow**
+The approach for this problem will, as a whole, take the view of a product and
+have not just a predictive model but a user interface (UI) for someone to easily
+interactive with and request predictions. Additionally, the system will provide
+its own historical predictions and its final accuracy.
 
-- http://sebastianraschka.com/Articles/2014_intro_supervised_learning.html
-- data gathering+collection
-- EDA and visualization
-- dimensionality reduction? PCA?
-- Feature reduction / selection / engineering
-- train/test split
-- cross-validation training
-- tuning / hyperparamater optimization
-- final model
-- test
--- test dataset / backtesting
-- prediction
--- new data
+Below are the associated processes for both the 1) Modeling and 2) UI workflows:
 
-**Product Workflow**
+#### Modeling Workflow - Supervised Learning
 
-From a user's perspective
+1. Data gathering + collection
+2. Data pre-processing
+..* Feature engineering, missing data
+3. EDA and visualizations
+4. Model evaluation / cross-validation
+..* Feature reduction / selection
+..* Dimensionality reduction
+..* Train/test data split
+..* Tuning / hyperparamater optimization
+5. Final model
+..* Test dataset / backtesting
+6. Predictions
+..* New / future data
 
-- front-end
-- add stock symbol
-- select range / accuracy
-- predict
--- rest api?
--- return prediction
-- display stock price and future date
-- side: other thing
+workflow diagrams
 
+**Data gathering and pre-processing**
+
+Data will be sourced mainly from Yahoo Finance API via the python module
+yahoo-finance 1.3.2.
+- where the data is coming from
+- what will you probably do with the data (CAPM?)
+
+**EDA and visualizations**
+
+In order to best fit and model the data, exploratory data analysis will first be
+performed to understand the type of data being used and determine any particular
+relationships or correlations. EDA and visualizations will take the shape of
+statistical data summary, log transformations, correlation matrix, etc. Once
+a handle of the data has been accomplished through analysis and graph plots
+the model evaluation phase will begin.
+
+**Model evaluation and Cross-validation**
+- Talk about benchmark? use decision tree. online test.
+- Cross-validation
+- Metric -> +/- 5% of actual value
+
+**Backtesting**
+- Not sure yet, there's an API thing I may be able to use to validate stuff
+
+#### UI Workflow - Flask Microframework
+
+**Development perspective**
+
+1. Environment setup
+--* Set up Flask
+2. Flask RESTful implementation
+--* Create restful endpoints
+3. Flask DB implementation
+--* Create data storage for tracking previous predictions and results
+4. Test APIs and data storage
+
+**User perspective**
+
+1. Visit landing page of stock price indictor
+2. User enters stock symbol of stock price to predict
+3. User selects a future range of prediction (e.g. 7 days from today)
+4. The system will then display the stock price prediction
+--* The system will also display a "prediction stock ticker" which will display
+past predictions from previous user requests and the system's prediction along
+with actual results
+
+workflow diagrams
 
 ### References
 
@@ -234,3 +275,4 @@ From a user's perspective
 - https://github.com/rasbt/python-machine-learning-book
 - http://francescopochetti.com/stock-market-prediction-part-introduction/
 - https://www.quantstart.com/articles/Forecasting-Financial-Time-Series-Part-1
+- http://sebastianraschka.com/Articles/2014_intro_supervised_learning.html
