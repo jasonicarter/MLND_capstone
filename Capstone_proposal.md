@@ -202,19 +202,19 @@ Below are the associated processes for both the 1) Modeling and 2) UI workflows:
 
 #### Modeling Workflow - Supervised Learning
 
-1. Data gathering + collection
-2. Data pre-processing
-..* Feature engineering, missing data
-3. EDA and visualizations
-4. Model evaluation / cross-validation
-..* Feature reduction / selection
-..* Dimensionality reduction
-..* Train/test data split
-..* Tuning / hyperparamater optimization
-5. Final model
-..* Test dataset / backtesting
-6. Predictions
-..* New / future data
++ Data gathering + collection
++ Data pre-processing
+  * Feature engineering, missing data
++ EDA and visualizations
++ Model evaluation / cross-validation
+  * Feature reduction / selection
+  * Dimensionality reduction
+  * Train/test data split
+  * Tuning / hyperparamater optimization
++ Final model
+  * Test dataset / backtesting
++ Predictions
+  * New / future data
 
 workflow diagrams
 
@@ -234,10 +234,13 @@ statistical data summary, log transformations, correlation matrix, etc. Once
 a handle of the data has been accomplished through analysis and graph plots
 the model evaluation phase will begin.
 
+- what analysis of the data might be required before being used
+
 **Model evaluation and Cross-validation**
 - Talk about benchmark? use decision tree. online test.
 - Cross-validation
 - Metric -> +/- 5% of actual value
+- which algorithms will be considered for your implementation
 
 **Backtesting**
 - Not sure yet, there's an API thing I may be able to use to validate stuff
@@ -246,13 +249,13 @@ the model evaluation phase will begin.
 
 **Development perspective**
 
-1. Environment setup
---* Set up Flask
-2. Flask RESTful implementation
---* Create restful endpoints
-3. Flask DB implementation
---* Create data storage for tracking previous predictions and results
-4. Test APIs and data storage
++ Environment setup
+  * Set up Flask
++ Flask RESTful implementation
+  * Create restful endpoints
++ Flask DB implementation
+  * Create data storage for tracking previous predictions and results
++ Test APIs and data storage
 
 **User perspective**
 
@@ -260,7 +263,7 @@ the model evaluation phase will begin.
 2. User enters stock symbol of stock price to predict
 3. User selects a future range of prediction (e.g. 7 days from today)
 4. The system will then display the stock price prediction
---* The system will also display a "prediction stock ticker" which will display
+* The system will also display a "prediction stock ticker" which will display
 past predictions from previous user requests and the system's prediction along
 with actual results
 
