@@ -176,24 +176,8 @@ in the future is within +/- 5% of the actual value, on average.
 - https://www.kaggle.com/wiki/RootMeanSquaredError
 
 ### Project Design
-_(approx. 1 page)_
 
-In this final section, summarize a theoretical workflow for approaching a
-solution given the problem. Provide thorough discussion for what strategies you
-may consider employing, what analysis of the data might be required before being
-used, or which algorithms will be considered for your implementation. The
-workflow and discussion that you provide should align with the qualities of the
-previous sections. Additionally, you are encouraged to include small
-visualizations, pseudocode, or diagrams to aid in describing the project design,
-but it is not required. The discussion should clearly outline your intended
-workflow of the capstone project.
-
----
-
-Describe the project as a product, and the overall strategy which is divided
-into two sections (model/backend and frontend) of the product.
-
-The approach for this problem will, as a whole, take the view of a product and
+The approach for this problem will, as a whole, take on the view of a product and
 have not just a predictive model but a user interface (UI) for someone to easily
 interactive with and request predictions. Additionally, the system will provide
 its own historical predictions and its final accuracy.
@@ -216,14 +200,16 @@ Below are the associated processes for both the 1) Modeling and 2) UI workflows:
 + Predictions
   * New / future data
 
-workflow diagrams
+The modeling workflow will, for the most part, follow the process as put forward
+by Sebastian Raschka.
+
+![alt text][supervised_workflow]
 
 **Data gathering and pre-processing**
 
 Data will be sourced mainly from Yahoo Finance API via the python module
-yahoo-finance 1.3.2.
-- where the data is coming from
-- what will you probably do with the data (CAPM?)
+yahoo-finance 1.3.2. The data may be cleaned, formatted or missing values filled
+while new data, feature engineering may also be used such as the CAPM.
 
 **EDA and visualizations**
 
@@ -234,15 +220,12 @@ statistical data summary, log transformations, correlation matrix, etc. Once
 a handle of the data has been accomplished through analysis and graph plots
 the model evaluation phase will begin.
 
-- what analysis of the data might be required before being used
+**Model evaluation, Cross-validation and Backtesting**
 
-**Model evaluation and Cross-validation**
 - Talk about benchmark? use decision tree. online test.
 - Cross-validation
 - Metric -> +/- 5% of actual value
 - which algorithms will be considered for your implementation
-
-**Backtesting**
 - Not sure yet, there's an API thing I may be able to use to validate stuff
 
 #### UI Workflow - Flask Microframework
@@ -279,3 +262,6 @@ workflow diagrams
 - http://francescopochetti.com/stock-market-prediction-part-introduction/
 - https://www.quantstart.com/articles/Forecasting-Financial-Time-Series-Part-1
 - http://sebastianraschka.com/Articles/2014_intro_supervised_learning.html
+
+[supervised_workflow]:
+ http://sebastianraschka.com/images/blog/2014/intro_supervised_learning/supervised_learning_flowchart.png
