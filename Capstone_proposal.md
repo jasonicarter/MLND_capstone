@@ -57,7 +57,7 @@ be via analysis of their financial spending and budgeting or having access to
 financial tool such as "roboadvisors", this data and the application of machine
 learning in the finance domain can change lives.
 
-**References**: [See references 1](#evaluation-metrics)
+**References**: [See references 1](#[1])
 
 ### Problem Statement
 
@@ -249,7 +249,7 @@ with actual results
 
 ### References
 
-#### a
+##### [1]
 - http://www.diva-portal.org/smash/get/diva2:354463/fulltext01.pdf
 - http://www.academia.edu/11692137/Analyzing_Different_Machine_Learning_Techniques_for_Stock_Market_Prediction
 - http://cs229.stanford.edu/proj2015/009_report.pdf
