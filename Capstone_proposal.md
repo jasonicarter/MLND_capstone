@@ -57,12 +57,7 @@ be via analysis of their financial spending and budgeting or having access to
 financial tool such as "roboadvisors", this data and the application of machine
 learning in the finance domain can change lives.
 
-- roboadvisors
-- http://www.diva-portal.org/smash/get/diva2:354463/fulltext01.pdf
-- http://www.academia.edu/11692137/Analyzing_Different_Machine_Learning_Techniques_for_Stock_Market_Prediction
-- http://cs229.stanford.edu/proj2015/009_report.pdf
-- http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.278.6139&rep=rep1&type=pdf
-- http://cs229.stanford.edu/proj2012/ShenJiangZhang-StockMarketForecastingusingMachineLearningAlgorithms.pdf
+**References**: [See references 1](#evaluation-metrics)
 
 ### Problem Statement
 
@@ -182,7 +177,7 @@ have not just a predictive model but a user interface (UI) for someone to easily
 interactive with and request predictions. Additionally, the system will provide
 its own historical predictions and its final accuracy.
 
-Below are the associated processes for both the 1) Modeling and 2) UI workflows:
+Below are the associated processes for both the 1) Modeling and 2) Product workflows:
 
 #### Modeling Workflow - Supervised Learning
 
@@ -253,6 +248,14 @@ with actual results
 ![Product Workflow](/ML_product_flow.png)
 
 ### References
+
+#### a
+- http://www.diva-portal.org/smash/get/diva2:354463/fulltext01.pdf
+- http://www.academia.edu/11692137/Analyzing_Different_Machine_Learning_Techniques_for_Stock_Market_Prediction
+- http://cs229.stanford.edu/proj2015/009_report.pdf
+- http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.278.6139&rep=rep1&type=pdf
+- http://cs229.stanford.edu/proj2012/ShenJiangZhang-StockMarketForecastingusingMachineLearningAlgorithms.pdf
+
 
 - http://www.investopedia.com/terms/i/investment.asp
 - http://bebusinessed.com/history/history-of-the-stock-market/
