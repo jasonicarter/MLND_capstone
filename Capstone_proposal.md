@@ -203,7 +203,7 @@ Below are the associated processes for both the 1) Modeling and 2) UI workflows:
 The modeling workflow will, for the most part, follow the process as put forward
 by Sebastian Raschka.
 
-![alt text][supervised_workflow]
+ <img src=" http://sebastianraschka.com/images/blog/2014/intro_supervised_learning/supervised_learning_flowchart.png" width="700"/>
 
 **Data gathering and pre-processing**
 
@@ -228,7 +228,7 @@ the model evaluation phase will begin.
 - which algorithms will be considered for your implementation
 - Not sure yet, there's an API thing I may be able to use to validate stuff
 
-#### UI Workflow - Flask Microframework
+#### Product Workflow - Flask Microframework
 
 **Development perspective**
 
@@ -250,7 +250,7 @@ the model evaluation phase will begin.
 past predictions from previous user requests and the system's prediction along
 with actual results
 
-workflow diagrams
+![Product Workflow](/ML_product_flow.png)
 
 ### References
 
@@ -262,6 +262,3 @@ workflow diagrams
 - http://francescopochetti.com/stock-market-prediction-part-introduction/
 - https://www.quantstart.com/articles/Forecasting-Financial-Time-Series-Part-1
 - http://sebastianraschka.com/Articles/2014_intro_supervised_learning.html
-
-[supervised_workflow]:
- http://sebastianraschka.com/images/blog/2014/intro_supervised_learning/supervised_learning_flowchart.png
