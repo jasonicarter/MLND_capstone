@@ -57,7 +57,7 @@ be via analysis of their financial spending and budgeting or having access to
 financial tool such as "roboadvisors", this data and the application of machine
 learning in the finance domain can change lives.
 
-**References**: [See references 1](#[1])
+**References**: [[1]](#1)
 
 ### Problem Statement
 
@@ -106,9 +106,7 @@ Industry | Internet Information Providers | a classification that refers to grou
 Sector | Technology | a sector is an area of the economy in which businesses share the same or a related product or service
 start | 1996-04-12 | initial offering date at which a security is first made available for public purchase
 
-- https://en.wikipedia.org/wiki/NASDAQ
-- https://en.wikipedia.org/wiki/New_York_Stock_Exchange
-- http://www.investopedia.com/terms
+**References**: [[2]](#2)
 
 ### Solution Statement
 
@@ -165,10 +163,7 @@ fit of predicted values to the actual values.
 Model results will be considered satisfactory if the predicted stock value 7 days
 in the future is within +/- 5% of the actual value, on average.
 
-- https://en.wikipedia.org/wiki/Root-mean-square_deviation
-- https://en.wikipedia.org/wiki/Coefficient_of_determination
-- http://scikit-learn.org/stable/modules/model_evaluation.html
-- https://www.kaggle.com/wiki/RootMeanSquaredError
+**References**: [[3]](#3)
 
 ### Project Design
 
@@ -249,14 +244,25 @@ with actual results
 
 ### References
 
-##### [1]
+##### 1
 - http://www.diva-portal.org/smash/get/diva2:354463/fulltext01.pdf
 - http://www.academia.edu/11692137/Analyzing_Different_Machine_Learning_Techniques_for_Stock_Market_Prediction
 - http://cs229.stanford.edu/proj2015/009_report.pdf
 - http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.278.6139&rep=rep1&type=pdf
 - http://cs229.stanford.edu/proj2012/ShenJiangZhang-StockMarketForecastingusingMachineLearningAlgorithms.pdf
 
+##### 2
+- https://en.wikipedia.org/wiki/NASDAQ
+- https://en.wikipedia.org/wiki/New_York_Stock_Exchange
+- http://www.investopedia.com/terms
 
+##### 3
+- https://en.wikipedia.org/wiki/Root-mean-square_deviation
+- https://en.wikipedia.org/wiki/Coefficient_of_determination
+- http://scikit-learn.org/stable/modules/model_evaluation.html
+- https://www.kaggle.com/wiki/RootMeanSquaredError
+
+##### 4
 - http://www.investopedia.com/terms/i/investment.asp
 - http://bebusinessed.com/history/history-of-the-stock-market/
 - http://www.investopedia.com/articles/07/stock-exchange-history.asp
