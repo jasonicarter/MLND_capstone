@@ -130,6 +130,9 @@ knowledge would put the owner of said information in an advantageous position,
 allowing him or her to invest in a company's stock increase or decrease in value.
 
 ### Benchmark Model
+The benchmark model will be comprised of multiple sources such as a naive random
+forest model and stock-forecasting.com an online stock price indicators. Outside
+of the train/test data backtesting will also be performed.
 
 - Similar stock mark indicator model for benchmarking
 -- http://www.stock-forecasting.com/Content/Data/Test.aspx
@@ -137,8 +140,6 @@ allowing him or her to invest in a company's stock increase or decrease in value
 - Backtesting
 -- http://www.investopedia.com/terms/b/backtesting.asp
 -- https://www.quantstart.com/articles/Backtesting-a-Forecasting-Strategy-for-the-SP500-in-Python-with-pandas
-- S&P 500 (compare to future results)
--- http://www.investopedia.com/terms/b/benchmark.asp
 
 ### Evaluation Metrics
 
@@ -212,11 +213,20 @@ the model evaluation phase will begin.
 
 **Model evaluation, Cross-validation and Backtesting**
 
-- Talk about benchmark? use decision tree. online test.
-- Cross-validation
-- Metric -> +/- 5% of actual value
-- which algorithms will be considered for your implementation
-- Not sure yet, there's an API thing I may be able to use to validate stuff
+Model evaluation will consider single regression as well as ensemble algorithms.
+While k-fold cross-validation will be used to evaluate the different combinations
+of feature selection, learning algorithms.
+
+Evaluated metrics will be considered satisfactory if the predicted value is within
++/- 5% of actual value.
+
+Some of the algorithms do be considered are:
+
+- Supervised Vector Machine (SVM)
+- K Nearest Neighbour (KNN)
+- Random Forest
+- Adaboost
+- Gradient Boosting
 
 #### Product Workflow - Flask Microframework
 
